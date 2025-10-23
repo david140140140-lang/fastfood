@@ -1,0 +1,229 @@
+/* Додайте ваші CSS стилі тут */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+    z-index: 10;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #ffeb3b;
+}
+
+header nav a {
+    color: #f5f5f5;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ffeb3b;
+}
+
+#hamburger {
+    display: none;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    margin-top: 80px;
+    background: url('https://images.unsplash.com/photo-1606755962773-d324f4bcb39b?w=1200') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    color: #ffeb3b;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ffeb3b;
+    border: none;
+    border-radius: 25px;
+    color: #1a1a1a;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #e00000;
+    color: white;
+}
+
+/* ===== MENU ===== */
+.menu {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #2a2a2a;
+}
+
+.menu h2 {
+    color: #ffeb3b;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.dish {
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.dish:hover {
+    transform: translateY(-5px);
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.dish h3 {
+    color: #ffeb3b;
+}
+
+.dish button {
+    background: #ffeb3b;
+    border: none;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.dish button:hover {
+    background: #e00000;
+    color: white;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #ffeb3b;
+}
+
+/* ===== CONTACTS ===== */
+.contacts {
+    background-color: #2a2a2a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contacts h2 {
+    color: #ffeb3b;
+}
+
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contacts input, .contacts textarea {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background: #1a1a1a;
+    color: white;
+    font-size: 1em;
+}
+
+.contacts button {
+    background: #ffeb3b;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacts button:hover {
+    background: #e00000;
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+}

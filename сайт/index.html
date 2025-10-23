@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаурма Шаурлявський — найсмачніша шаурма у місті</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🥙 Шаурлявський</div>
+        <nav id="nav-menu">
+            <a href="#home">Головна</a>
+            <a href="#menu">Меню</a>
+            <a href="#about">Про нас</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+        <div id="hamburger">🍔</div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Смак, який заряджає!</h1>
+        <p>Шаурма, яку обожнюють усі 💛</p>
+        <button id="order-btn">Замовити зараз</button>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Наше меню</h2>
+        <div class="menu-grid">
+            <div class="dish">
+                <img src="images/images_cms-image-000112978.jpg" alt="Шаурма класична">
+                <h3>Шаурма класична</h3>
+                <p>Соковите м’ясо, овочі та фірмовий соус.</p>
+                <span>95 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/01966c97-b961-73e1-bdad-8466610a86c3-826x0.jpeg" alt="Шаурма з куркою">
+                <h3>Шаурма з куркою</h3>
+                <p>Найпопулярніша страва серед наших гостей!</p>
+                <span>85 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/c137c047639268af08d6585c0dcfcacf-600x450.jpeg" alt="Шаурма XXL">
+                <h3>Шаурма XXL</h3>
+                <p>Подвійна порція м’яса для справжніх гурманів.</p>
+                <span>120 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/image_1761219691774.jpeg" alt="Веганська шаурма">
+                <h3>Веганська шаурма</h3>
+                <p>Натуральні інгредієнти, максимум смаку.</p>
+                <span>80 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/01966c9a-e4ab-735e-8d39-98116589890b-826x0.jpeg" alt="Шаурма з яловичиною">
+                <h3>Шаурма з яловичиною</h3>
+                <p>Ароматна, ситна і дуже смачна класика.</p>
+                <span>110 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/48b2b6f97b0ffe5126a59789baab5d---png_710x_83b40_convert.png" alt="Шаурма BBQ">
+                <h3>Шаурма BBQ</h3>
+                <p>Димний аромат і пікантний соус BBQ.</p>
+                <span>115 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/456_s_2x.jpg" alt="Шаурма з сиром">
+                <h3>Шаурма з сиром</h3>
+                <p>Ніжний сир, що тане в роті — просто насолода!</p>
+                <span>100 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+            <div class="dish">
+                <img src="images/volga_66798f1d07bd3.jpg" alt="Шаурма гостра">
+                <h3>Шаурма гостра</h3>
+                <p>Для тих, хто любить справжній вогонь у смаку 🔥</p>
+                <span>95 грн</span>
+                <button class="add-to-cart">Додати в кошик</button>
+            </div>
+        </div>
+        <p class="cart-counter">🛒 Замовлень: <span id="cart-count">0</span></p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Про нас</h2>
+        <p>Ми — команда, яка живе шаурмою! Використовуємо лише свіжі продукти, домашні соуси та відданість своїй справі.</p>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2>Контакти</h2>
+        <p>📍 вул. Смачна, 12, Верхньодніпроськ</p>
+        <p>📞 +38 (067) 123 45 67</p>
+        <p>✉️ fastbite@gmail.com</p>
+
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Ваше ім’я" required>
+            <input type="email" id="email" placeholder="Ваш Email" required>
+            <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 FastBite. Усі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
